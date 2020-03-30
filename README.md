@@ -1,0 +1,1 @@
+This project is one of my first things on my learning journey. At this address there is the more detailed description of the assignment: <https://www.theodinproject.com/courses/web-development-101/lessons/html-css?ref=lnav>
