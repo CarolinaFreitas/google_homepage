@@ -1,0 +1,45 @@
+html{
+    font-size:10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display:flex;
+    float:right;
+}
+header a{
+    padding:10px;
+
+}
+
+main {
+    width:50%;
+    margin: auto;
+    display:flexbox;
+    
+}
+main img {
+    max-width:272px;
+}
+main .buttons {
+    margin: 0 auto;
+    align-items: center;
+}
+footer {
+    position:absolute;
+    bottom: 0px;
+
+    color: rgba(0,0,0,0.54);
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+}
+footer div {
+    
+}
