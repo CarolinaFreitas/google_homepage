@@ -21,21 +21,38 @@ header a{
 
 main {
     width:50%;
+    height:50%;
     margin: auto;
-    display:flexbox;
+    justify-content: center;
     
 }
 main img {
     max-width:272px;
 }
-main .buttons {
-    margin: 0 auto;
-    align-items: center;
+div.pesquisa {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 25px;
+    min-width: 300px;
+    padding: 10px;
+}
+.pesquisa input {
+    border:none;
+    outline:none;
+}
+.buttons input{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    color: rgba(0,0,0,0.75);
+    width: 130px;
+    height: 35px;
+    text-align: center;
 }
 footer {
     position:absolute;
     bottom: 0px;
-
+    display:flexbox;
     color: rgba(0,0,0,0.54);
     background-color: #f2f2f2;
     border-top: 1px solid #dadce0;
