@@ -3,6 +3,10 @@
 <head>
     <title>Google</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" type="text/css" href="normalize.css" >
     <link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 
@@ -10,36 +14,42 @@
     <header>
         <a>Gmail</a>
         <a>Imagens</a>
-        <a alt="Google Apps"></a>
-        <a alt="Conta do Google"></a>
+        <a class="apps" alt="Google Apps">
+            <img id="apps" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png">
+        </a>
+        <a class="avatar" alt="Conta do Google">
+            <!--<img id="avatar" src="https://cdn.pixabay.com/photo/2015/05/07/13/46/cappuccino-756490_960_720.jpg" />-->
+        </a>
     </header>
     <main>
-        
         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google logo" />
         <div class="pesquisa">
-            <!-- ícone pesquisa-->
-            <input type="text" value="" name="pesquisa" >
+            <!-- ícone lupa -->
+            <svg>
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+            <input type="text" placeholder="pesquisa" >
             <!-- ícone teclado -->
+            <div id="teclado"></div>
         </div>
         <div class="buttons">
             <input type="submit" value="Pesquisa Google" >
             <input type="submit" value="Estou com sorte" >
         </div>
-        
-        
     </main>
     <footer>
+        <div class="right">
+            <a>Privacidade</a>
+            <a>Termos</a>
+            <a>Configurações</a>
+        </div>
         <div class="left">
             <a>Publicidade</a>
             <a>Negócios</a>
             <a>Sobre</a>
             <a>Como funciona a pesquisa</a>
         </div>
-        <div class="right">
-            <a>Privacidade</a>
-            <a>Termos</a>
-            <a>Configurações</a>
-        </div>
+        
 
     </footer>
 </body>
