@@ -4,11 +4,12 @@ html{
 }
 
 body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
-    margin: 0px;
-    padding: 0px;
 }
 /* ---------------------------------------------------
                         HEADER
@@ -20,8 +21,9 @@ header {
     margin:10px 15px 0px 0px;
     line-height: 0px;
     font-size: 1.4rem;
-    /* position: absolute;
-    right: 0px; */
+    font-weight: 300;
+    position: absolute;
+    right: 0px; 
 }
 header a{
     padding:0px;
@@ -29,9 +31,9 @@ header a{
 
 }
 
-a.apps {
+/* a.apps {
     
-}
+} */
 
 #apps {
     height: 25px;
@@ -85,16 +87,14 @@ main img {
 /* ---------------------BORDA DA PESQUISA------------------------- */
 div.pesquisa {
     position: relative;
-    color:blue;
     border-radius: 25px;
     border: 1px solid #dadce0;
-    height: 50px;
-    width:400px;
-    /* background-color: red; */
+    height: 45px;
+    width:500px;
     
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     padding: auto;
     margin: 30px;
@@ -112,51 +112,63 @@ div.pesquisa:hover {
     height: 17.5px;
     width: 17.5px;
     margin: 10px;
-    justify-self: flex-start;
+    opacity: 0.8;
 }
 /* ---------------------CAIXA DE TEXTO------------------------- */
-}
+
 main .pesquisa input {
     border:none;
     border-color: transparent;
     height: 40px;
-    width: auto;
-    padding: 5px;
-    margin:0px;
-    justify-self: stretch;
+    width:75%;
+    padding-right: 0px;
+    font-size: 1.6rem;
     
-    background-color: lightgreen;
+    
+    background-color:transparent;
 }
 /* ---------------------TECLADO VIRTUAL------------------------- */
 #teclado {
-    background-color: rgba(0,0,0,0.54);
+    background-color: rgba(0,0,0,0.45);
+    text-align: center;
+    justify-content:center;
     width: 30px;
     height: 15px;
     margin: 10px;
     color: white;
-    font-size: 1rem;
+    line-height: 0.7;
+    font-size: 0.9rem;
+}
 
 /* ---------------------BOTÕES------------------------- */
 
-main .buttons {
-    margin: 10px auto;
+/* main .buttons {
+    
+
+    margin: auto;
     align-items: center;
-}
+
+} */
+
 main .buttons input {
+    
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
-    padding: 0.5em;
-    border-radius: 0.5rem;
-    border-color: transparent;
-    background: #f9f8fa;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 0em;
+    padding: 1.2em;
+    margin: 0 4px;
+    border-radius: 0.75rem;
+    border:1px solid #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 main .buttons input:hover {
-    background-color:white;
-    color:rgba(0,0,0,0.75);
-    border:1px solid #dadce0;
-    box-shadow: 1px 1px 0px 0px #dadce0;
+    color: rgba(0,0,0,0.95);
+    background-color: #fafafa;
+    border:1px solid #e5e5e5;
+    box-shadow: 1px 2px 1px 0px #eeeeee;
 }
 
 /* ---------------------------------------------------
@@ -165,6 +177,7 @@ main .buttons input:hover {
 footer {
     position: absolute;
     bottom: 0px;
+    margin-bottom: 0vh;
     color: rgba(0,0,0,0.54);
     background-color: #f2f2f2;
     border-top: 1px solid #dadce0;
@@ -195,7 +208,7 @@ footer div a{
 }
 @media (max-width: 900px) {
     footer {
-        padding:20px 0px;
+        padding:10px 0px;
     }
 
     .left, .right {
@@ -205,6 +218,6 @@ footer div a{
     }
 
     footer div a {
-        line-height:30px;
+        line-height:35px;
     }
 }
